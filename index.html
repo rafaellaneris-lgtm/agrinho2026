@@ -1,14 +1,65 @@
 <!DOCTYPE html>
-<html>
-     <head>
-     <title>agrinho</title>
-     <meta charset="utf-8"/>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Viver Sertanejo</title>
+        <style>
+            header{
+                background-color: #4D2908;
+                color: #FFFFFF;
+                text-align: center;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 16px;
+            
+            }
+            main{
+                background-color: #FFFFFF;
+                color: #4D2908;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 16px;
+                display: flex;
+            }
+            img{
+                width: 80px;
+                height: 80px;
+            }
+            .artigo-autor {
+                font-weight: bold;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Viver Sertanejo</h1> 
+            <p>vou compartilhar conhecimentos sobre o sertanejo e suas curiosidades</p>
+        </header>
+        <main>
+            <img src="image_ecf37fa3.png" alt="A imagem retrata um cenário sertanejo rústico ao entardecer, com um violão, uma caneca de barro e um chapéu de couro sobre uma mesa de madeira, ao lado de um banco vazio, uma casa de adobe e uma pequena igreja ao fundo.">
+            <div>
+                <h2>historia corinthiana</h2>
+                <p class="artigo-autor">por: Rafaella Rota Neris</p>
+                <p>Sejam bem vindos!. Aqui vou compartilhar a historia e curiosidades do sertanejo d</p>
+                <button>❤️ <span>0</span></button>
+            </div>
+
+        </main>
+    </body>
+<script>
+    const botoes = document.querySelector("button");
+
+    botoes.forEach( function(botao){
+        botao.addEventListener("click", botaoClicado);
+        function botaoClicado(){
+            conloe.log("fui clicado");
+            let texto = botao.querySelector("span");
+            texto.textContent++;
+        }
+    } )
 
 
-</head>
-
-
-
-
-
+</script>
 </html>
